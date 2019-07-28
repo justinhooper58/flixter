@@ -1,5 +1,4 @@
 class Instructor::LessonsController < ApplicationController
-<<<<<<< HEAD
   before_action :authenticate_user!
   before_action :require_authorized_for_current_section
  
@@ -13,7 +12,7 @@ class Instructor::LessonsController < ApplicationController
     @lesson = current_section.lessons.create(lesson_params)
     redirect_to instructor_course_path(current_section.course)
   end
-=======
+
     before_action :authenticate_user!
     before_action :require_authorized_for_current_section
    
@@ -25,7 +24,7 @@ class Instructor::LessonsController < ApplicationController
       @lesson = current_section.lessons.create(lesson_params)
       redirect_to instructor_course_path(current_section.course)
     end
->>>>>>> 4af941edbe6481b36f0a97903d195e0319c49ad7
+
 
     private
 

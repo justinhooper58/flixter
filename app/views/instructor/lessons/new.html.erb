@@ -1,9 +1,19 @@
+
 <br />
 <div class="booyah-box col-10 offset-1">
   <h1>Add a new lesson</h1>
+<<<<<<< HEAD
   <%= simple_form_for @lesson, url: instructor_section_lessons_path(@section) do |f| %>
     <%= f.input :title %>
     <%= f.input :subtitle %>
     <%= f.submit "Add the lesson" %>
+=======
+  <%= simple_form_for @lesson, url: instructor_section_lessons_path(current_section) do |f| %>
+    <%= f.input :title %>
+    <%= f.input :subtitle %>
+    <br />    <%= f.submit "Add the lesson" %>
+    <br />
+    <br />
+>>>>>>> 4af941edbe6481b36f0a97903d195e0319c49ad7
   <% end %>
 </div>

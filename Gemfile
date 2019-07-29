@@ -76,4 +76,8 @@ gem 'devise'
 
 gem 'carrierwave'
 
+<<<<<<< HEAD
 gem 'mini_magick'
+=======
+gem "mini_magick"
+>>>>>>> cc19d2e0dbb13120823dd118674319762f101f6f
